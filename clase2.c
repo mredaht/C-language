@@ -41,7 +41,9 @@ int main(){
 }
 */
 
-  typedef struct Persona Persona;
+  
+int main(){ 
+    typedef struct Persona Persona;
     struct Persona{
         char nombre[20];
         int edad;
@@ -49,13 +51,16 @@ int main(){
 
     Persona listaP[20];
 
-int main(){ 
     int l=0;
     printf("Introduce los datos de a lo sumo 25 personas\n");
-    while(scanf("%d, %s", &listaP[l].edad, listaP[l].nombre!=0)){
+    while(scanf("%d %s", &listaP[l].edad, listaP[l].nombre)!=0){
         l++;
     }
-    printf("Longitud de la lista %d", l);
+    printf("Longitud de la lista %d\n", l);
+
+    for(int i=0; i<l; i++){
+        printf("Nombre: %s, Edad: %d\n", listaP[i].nombre, listaP[i].edad);
+    }
     
   //  scanf("%s", p.nombre);
   //  scanf("%d", &p.edad);
@@ -65,4 +70,3 @@ int main(){
 
     return 0;
 }
-holaaa
