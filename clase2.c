@@ -60,12 +60,7 @@ int main(){
     for(int i=0; i<l; i++){
         printf("Nombre: %s, Edad: %d\n", listaP[i].nombre, listaP[i].edad);
     }
-    
-  //  scanf("%s", p.nombre);
-  //  scanf("%d", &p.edad);
 
-  //  printf("El nombre es %s\n", p.nombre);
-   // printf("La edad es %d", p.edad);
 
     return 0;
 }
