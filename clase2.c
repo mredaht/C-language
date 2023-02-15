@@ -7,6 +7,8 @@ Nombre=b, Direccion=1004
 Nombre=c[0], Direccion=1005-1008 // c[1], Direccion=1009-1012 // c[2], Direccion=1013-1016
 */
 #include <stdio.h>
+#include <stdlib.h>
+
 
 
 /*
@@ -39,7 +41,7 @@ int main(){
 
     return 0;
 }
-*/
+
     typedef struct Persona Persona;
     struct Persona{
         char nombre[20];
@@ -65,7 +67,6 @@ int main(){
     return 0;
 }
 
-/*
 int a = 25;
 int *pa=&a; es lo mismo que a 
 char c = 'A'
@@ -77,4 +78,27 @@ a- Direccion=1000-1003 valor 8
 pa -- Doreccion=1004-1007 valor 1000
 c -- Direccion=1008 valor 'A'
 pc -- Direccion= 1009 1012 valor 1008
+
+
+void intercambiar(int a, int b){ //asi no se intercambian los valores
+    int aux = a;
+    a=b;
+    b=aux;
+    
+}
 */
+void intercambiar(int * pa, int * pb){
+  //pa es un puntero dentro de la funcion , *pa es un entero dentro de la funcion
+    int aux=*pa;
+    *pa=*pb;
+    *pb=aux;
+}
+
+int main(void){
+    int a=5;
+    int b=8;
+    intercambiar(&a, &b);
+    printf("a=%d, b=%d", a,b);
+    return 0;
+}
+
