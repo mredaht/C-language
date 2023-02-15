@@ -40,9 +40,6 @@ int main(){
     return 0;
 }
 */
-
-  
-int main(){ 
     typedef struct Persona Persona;
     struct Persona{
         char nombre[20];
@@ -50,6 +47,8 @@ int main(){
     };
 
     Persona listaP[20];
+
+int main(){ 
 
     int l=0;
     printf("Introduce los datos de a lo sumo 25 personas\n");
