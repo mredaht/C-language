@@ -64,3 +64,17 @@ int main(){
 
     return 0;
 }
+
+/*
+int a = 25;
+int *pa=&a; es lo mismo que a 
+char c = 'A'
+pc=&c
+*pc
+*pa=  pa --> *pa (a)
+*pa=8
+a- Direccion=1000-1003 valor 8
+pa -- Doreccion=1004-1007 valor 1000
+c -- Direccion=1008 valor 'A'
+pc -- Direccion= 1009 1012 valor 1008
+*/
